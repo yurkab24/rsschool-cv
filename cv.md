@@ -7,3 +7,9 @@ Location: **Gomel, Belarus**
 
 ## **Summary**
 Learning javascript development.
+
+## Code examples
+**github** : https://github.com/yurkab24/
+```javascript
+const multiplyAll = (array) => (n) => array.map((value) => value * n);
+```
