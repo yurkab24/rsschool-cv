@@ -13,3 +13,13 @@ Learning javascript development.
 ```javascript
 const multiplyAll = (array) => (n) => array.map((value) => value * n);
 ```
+
+## **Skills**
+- **Intermediate:** HTML, CSS
+- **Low:** JS, MySQL, PHP
+
+## Experience and Education
+- HTML Academy - HTML/CSS
+
+## English
+Elementary (A1)
