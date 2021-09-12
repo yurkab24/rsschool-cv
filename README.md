@@ -1,1 +1,1 @@
-https://yurkab24.github.io/rsschool-cv/cvgit
+https://yurkab24.github.io/rsschool-cv/cv
