@@ -291,7 +291,8 @@ body {
 
 .menu {
   position: absolute;
-  
+  left: -50px;
+  background: #000;
 }
 
 .menu__container {
