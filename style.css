@@ -37,6 +37,8 @@ body {
   border-radius: 30px;
   -webkit-box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 30%);
   box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 30%);
+
+  position: relative;
 }
 
 .top__content {
@@ -173,6 +175,16 @@ body {
   text-align: center;
 }
 
+.sub-title {
+  line-height: 1.5;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
 .title__color {
   color: var(--primary);
 }
@@ -234,12 +246,14 @@ body {
   row-gap: 20px;
 }
 .skills__item {
-  width: 90%;
+  width: 95%;
   color: var(--dark-light);
 }
 .skills__name {
   padding-bottom: 10px;
   letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .scills__line {
@@ -268,9 +282,32 @@ body {
 }
 
 .scills__line--js::before {
-  width: 15%;
+  width: 12%;
 }
 
 .scills__line--php::before {
-  width: 10%;
+  width: 8%;
+}
+
+.menu {
+  position: absolute;
+  
+}
+
+.menu__container {
+  
+}
+
+.menu__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu__item {}
+.menu__link {
+  text-decoration: none;
+  color: var(--primary);
+  padding: 10px;
+  border: 1px solid var(--primary);
+  display: block;
 }
