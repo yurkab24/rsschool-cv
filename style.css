@@ -158,3 +158,57 @@ body {
   background-image: url("./icon-phone-hover.svg");
 }
 
+.about {
+  padding: 35px 50px;
+}
+
+.title {
+  font-size: 32px;
+  color: var(--white);
+  text-align: center;
+}
+
+.title__color {
+  color: var(--primary);
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 30px;
+}
+
+.about__block--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  justify-items: center;
+}
+
+.about__text {
+  margin: 0;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: var(--grey);
+}
+
+.about__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 90%;
+}
+
+.about__item {
+  line-height: 1.5;
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+.about__item-color {
+  color: var(--grey);
+  font-weight: 500;
+}
