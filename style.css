@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   --bg: #212529;
   --white: #ffffff;
   --grey: #6c757d;
+  --darck: #272b30;
 }
 
 body {
@@ -35,14 +36,6 @@ body {
   border-radius: 30px;
   -webkit-box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 30%);
   box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 30%);
-}
-
-.top {
-    
-}
-
-.content {
-  
 }
 
 .top__content {
@@ -87,8 +80,6 @@ body {
   align-self: center;
 }
 
-.top__title {}
-
 .top__text h1 {
   font-size: 36px;
   line-height: 1.5;
@@ -108,5 +99,62 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  margin-top: 20px;
+  margin-top: 15px;
 }
+
+.social {
+  padding-top: 25px;
+}
+
+.social__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(4, 35px);
+  grid-gap: 10px;
+}
+
+.social__link {
+  background: var(--darck);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: block;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .2s ease-in;
+
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.social__link--phone {
+  background-image: url("./icon-phone.svg");
+}
+
+.social__link--github {
+  background-image: url("./icon-github.svg");
+}
+
+.social__link--inst {
+  background-image: url("./icon-instagram-black.svg");
+}
+
+.social__link--inst:hover {
+  background-image: url("./icon-instagram-color.svg");
+}
+
+.social__link--github:hover {
+  background-image: url("./icon-github-black.svg");
+}
+
+.social__link--phone:hover {
+  background-image: url("./icon-phone-hover.svg");
+}
+
