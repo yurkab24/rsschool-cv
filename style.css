@@ -18,7 +18,8 @@ h1, h2, h3, h4, h5, h6 {
   --bg: #212529;
   --white: #ffffff;
   --grey: #6c757d;
-  --darck: #272b30;
+  --dark: #272b30;
+  --dark-light: #c4d1dd;
 }
 
 body {
@@ -117,7 +118,7 @@ body {
 }
 
 .social__link {
-  background: var(--darck);
+  background: var(--dark);
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -159,6 +160,10 @@ body {
 }
 
 .about {
+  
+}
+
+.content {
   padding: 35px 50px;
 }
 
@@ -211,4 +216,61 @@ body {
 .about__item-color {
   color: var(--grey);
   font-weight: 500;
+}
+
+.skills {}
+
+.skills__content {
+  margin-top: 30px;
+}
+
+.skills__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+}
+.skills__item {
+  width: 90%;
+  color: var(--dark-light);
+}
+.skills__name {
+  padding-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+
+.scills__line {
+  height: 5px;
+  width: 100%;
+  background: var(--grey);
+  position: relative;
+}
+
+.scills__line--html::before,
+.scills__line--css::before,
+.scills__line--js::before,
+.scills__line--php::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: var(--primary);
+}
+
+.scills__line--html::before {
+  width: 60%;
+}
+
+.scills__line--css::before {
+  width: 60%;
+}
+
+.scills__line--js::before {
+  width: 15%;
+}
+
+.scills__line--php::before {
+  width: 10%;
 }
