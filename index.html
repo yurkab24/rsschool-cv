@@ -14,7 +14,7 @@
 
 <body>
   <main class="main">
-    <nav class="menu">
+    <!-- <nav class="menu">
       <ul class="menu__list">
         <li class="menu__item"><a class="menu__link" href="#">Main</a></li>
         <li class="menu__item"><a class="menu__link" href="#">About</a></li>
@@ -23,7 +23,7 @@
         <li class="menu__item"><a class="menu__link" href="#">Portfolio</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Сode examples</a></li>
       </ul>
-    </nav>
+    </nav> -->
     <section class="top">
       <div class="top__content">
         <figure class="picture">
@@ -148,8 +148,9 @@ function arrayDiff(a, b) {
             <h3 class="sub-title">Find the stray number</h3>
             <pre class="code__example">
 function stray(numbers) {
-  return numbers.find((number) => {
-    return numbers.indexOf(number) == numbers.lastIndexOf(number)
+  return numbers.find((n) => {
+    return numbers.indexOf(n)  == numbers.lastIndexOf(n)
+   
   });
 }
             </pre>
