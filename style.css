@@ -326,3 +326,14 @@ body {
   letter-spacing: 1.5px;
   margin: 5px 0;
 }
+
+.code {}
+.code__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.code__item {}
+.code__example {
+  font-size: 14px;
+  color: var(--dark-light);
+}

@@ -46,7 +46,7 @@
                 <a class="social__link social__link--phone" href="tel:375296707763"></a>
               </li>
               <li class="social__item">
-                <a target="_blacnk" class="social__link social__link--inst"
+                <a target="_blank" class="social__link social__link--inst"
                   href="https://www.instagram.com/yura.b0/"></a>
               </li>
             </ul>
@@ -54,7 +54,6 @@
         </div>
       </div>
 
-      </div>
     </section>
     <section class="about">
       <div class="content">
@@ -121,7 +120,45 @@
         </div>
       </div>
     </section>
-    
+
+    <section class="code">
+      <div class="content">
+        <h2 class="title"><span class="title__color">Code</span> examples</h2>
+        <div class="code__content">
+
+          <div class="code__item">
+
+            <h3 class="sub-title">Array.diff</h3>
+            <pre class="code__example">
+function arrayDiff(a, b) {
+  if (a.length === 0) return [];
+  if (b.length === 0) return a;
+
+  return a.filter((item) => {
+    if (b.indexOf(item) === -1) {
+      return item;
+    }
+  });
+}
+            </pre>
+
+          </div>
+          <div class="code__item">
+
+            <h3 class="sub-title">Find the stray number</h3>
+            <pre class="code__example">
+function stray(numbers) {
+  return numbers.find((number) => {
+    return numbers.indexOf(number) == numbers.lastIndexOf(number)
+  });
+}
+            </pre>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 </body>
 
