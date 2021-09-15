@@ -291,8 +291,11 @@ body {
 }
 
 .menu {
-  position: absolute;
-  left: -50px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  left: 0;
   background: var(--bg);
 
   -webkit-box-shadow: 0px 0px 4px 0px rgb(0 0 0);
@@ -303,14 +306,25 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+
+  display: flex;
+  justify-content: center;
+
 }
 
 .menu__link {
   text-decoration: none;
   color: var(--primary);
   padding: 10px;
-/*   border: 1px solid var(--primary); */
+
   display: block;
+  transition: .2s  ease-in-out;
+}
+
+.menu__link:hover {
+  transform: scale(1.1);
+  transform-origin: left;
+  color: var(--primary-hov);
 }
 
 .education__list {
@@ -484,6 +498,10 @@ body {
   .social__list {
     justify-content: center;
   }
+
+  .menu {
+    display: none;
+  }
 }
 
 @media (max-width: 520px) {
@@ -525,4 +543,3 @@ body {
 
   }
 }
-
