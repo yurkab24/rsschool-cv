@@ -394,3 +394,28 @@ body {
   color: var(--primary);
 }
 
+.footer {}
+.footer__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.school-link {
+  width: 110px;
+  transition: .3s ease-in-out;
+}
+
+.year {
+  color: var(--grey);
+}
+
+.github-link {
+  width: 45px;
+  transition: .3s ease-in-out;
+}
+
+.school-link:hover, .github-link:hover {
+  transform: rotate(360deg);
+}
