@@ -336,4 +336,33 @@ body {
 .code__example {
   font-size: 14px;
   color: var(--dark-light);
+  margin: 0;
+}
+
+.portfolio {}
+.portfolio__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+}
+.sub-title--portfolio {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.portfolio__item {
+
+}
+.portfolio__name {
+  font-size: 14px;
+  color: var(--dark-light);
+  transition: .3s ease-in-out;
+}
+
+.portfolio__name:hover {
+  color: var(--primary);
+}
+
+.portfolio__img {
+  width: 100%;
+  height: auto;
 }
