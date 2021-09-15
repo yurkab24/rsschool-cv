@@ -349,9 +349,19 @@ body {
   margin: 0;
   margin-bottom: 10px;
 }
-.portfolio__item {
 
+.portfolio__text-block {
+  color: var(--dark-light);
+  letter-spacing: 1.3px;
+  margin: 5px 0;
 }
+
+.portfolio__subtitle {
+  margin-top: 10px;
+  font-size: 10px;
+  color: var(--primary);
+}
+
 .portfolio__name {
   font-size: 14px;
   color: var(--dark-light);
@@ -365,4 +375,47 @@ body {
 .portfolio__img {
   width: 100%;
   height: auto;
+}
+
+.english {}
+
+.english__content {
+  margin-top: 20px;
+}
+
+.english__text {
+  margin: 0;
+  color: var(--dark-light);
+  letter-spacing: 1.5;
+  line-height: 1.5;
+}
+
+.english__text-color {
+  color: var(--primary);
+}
+
+.footer {}
+.footer__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.school-link {
+  width: 110px;
+  transition: .3s ease-in-out;
+}
+
+.year {
+  color: var(--grey);
+}
+
+.github-link {
+  width: 45px;
+  transition: .3s ease-in-out;
+}
+
+.school-link:hover, .github-link:hover {
+  transform: rotate(360deg);
 }
