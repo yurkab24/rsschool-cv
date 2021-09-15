@@ -366,3 +366,21 @@ body {
   width: 100%;
   height: auto;
 }
+
+.english {}
+
+.english__content {
+  margin-top: 20px;
+}
+
+.english__text {
+  margin: 0;
+  color: var(--dark-light);
+  letter-spacing: 1.5;
+  line-height: 1.5;
+}
+
+.english__text-color {
+  color: var(--primary);
+}
+
