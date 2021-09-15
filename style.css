@@ -403,7 +403,7 @@ body {
 }
 
 .school-link {
-  width: 110px;
+  width: 70px;
   transition: .3s ease-in-out;
 }
 
@@ -412,7 +412,7 @@ body {
 }
 
 .github-link {
-  width: 45px;
+  width: 30px;
   transition: .3s ease-in-out;
 }
 
