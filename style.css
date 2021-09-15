@@ -3,6 +3,10 @@ html, body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -115,7 +119,7 @@ body {
   margin: 0;
 
   display: grid;
-  grid-template-columns: repeat(4, 35px);
+  grid-template-columns: repeat(3, 35px);
   grid-gap: 10px;
 }
 
@@ -159,10 +163,6 @@ body {
 
 .social__link--phone:hover {
   background-image: url("./icon-phone-hover.svg");
-}
-
-.about {
-  
 }
 
 .content {
@@ -230,7 +230,6 @@ body {
   font-weight: 500;
 }
 
-.skills {}
 
 .skills__content {
   margin-top: 30px;
@@ -245,10 +244,12 @@ body {
   grid-template-columns: 1fr 1fr;
   row-gap: 20px;
 }
+
 .skills__item {
   width: 95%;
   color: var(--dark-light);
 }
+
 .skills__name {
   padding-bottom: 10px;
   letter-spacing: 1.5px;
@@ -290,56 +291,90 @@ body {
 }
 
 .menu {
-  position: absolute;
-  left: -50px;
-  background: #000;
-}
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  background: var(--bg);
 
-.menu__container {
-  
+  -webkit-box-shadow: 0px 0px 4px 0px rgb(0 0 0);
+  box-shadow: 0px 0px 4px 0px rgb(0 0 0);
 }
 
 .menu__list {
   padding: 0;
   margin: 0;
   list-style: none;
+
+  display: flex;
+  justify-content: center;
+
 }
-.menu__item {}
 
 .menu__link {
   text-decoration: none;
   color: var(--primary);
   padding: 10px;
-  border: 1px solid var(--primary);
+
   display: block;
+  transition: .2s  ease-in-out;
 }
 
-.education {}
-.education__content {}
+.menu__link:hover {
+  transform: scale(1.1);
+  transform-origin: left;
+  color: var(--primary-hov);
+}
+
 .education__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
 .education__item {
   color: var(--dark-light);
   letter-spacing: 1.5px;
   margin: 5px 0;
 }
 
-.code {}
+.code .content {
+  padding-bottom: 0;
+}
+
 .code__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.code__item {}
+
+.code__content .sub-title {
+  margin-bottom: 0;
+}
+
 .code__example {
   font-size: 14px;
   color: var(--dark-light);
   margin: 0;
 }
 
-.portfolio {}
+.javascript {
+  background: var(--bg);
+  color: var(--dark-light);
+}
+
+.hljs-function {
+  color: wheat;
+}
+
+.hljs-keyword {
+  color: #606097;
+}
+
+.portfolio .content {
+  padding-top: 0;
+}
+
 .portfolio__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -377,8 +412,6 @@ body {
   height: auto;
 }
 
-.english {}
-
 .english__content {
   margin-top: 20px;
 }
@@ -394,7 +427,6 @@ body {
   color: var(--primary);
 }
 
-.footer {}
 .footer__content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -403,7 +435,7 @@ body {
 }
 
 .school-link {
-  width: 110px;
+  width: 70px;
   transition: .3s ease-in-out;
 }
 
@@ -412,10 +444,102 @@ body {
 }
 
 .github-link {
-  width: 45px;
+  width: 30px;
   transition: .3s ease-in-out;
 }
 
 .school-link:hover, .github-link:hover {
   transform: rotate(360deg);
+}
+
+@media (max-width: 1000px) {
+  .main {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .skills__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 924px) {
+  .code__example {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 816px) {
+  .code__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 680px) {
+  .top__content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .portfolio__content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .social__list {
+    justify-content: center;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .picture {
+    width: 230px;
+    height: 230px;
+  }
+
+  .code__example {
+    font-size: 9px;
+  }
+
+  .about__block--grid {
+    font-size: 12px;
+  }
+
+  .top__content {
+    justify-content: center;
+  }
+
+  .top__title {
+    text-align: center;
+  }
+
+  .top__sub-title {
+    text-align: center;
+
+  }
 }
