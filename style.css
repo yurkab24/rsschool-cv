@@ -352,6 +352,19 @@ body {
 .portfolio__item {
 
 }
+
+.portfolio__text-block {
+  color: var(--dark-light);
+  letter-spacing: 1.3px;
+  margin: 5px 0;
+}
+.portfolio__description {}
+
+.portfolio__subtitle {
+  margin-top: 10px;
+  font-size: 10px;
+}
+
 .portfolio__name {
   font-size: 14px;
   color: var(--dark-light);
