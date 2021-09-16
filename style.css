@@ -565,7 +565,7 @@ body {
   }
 
   .active .menu__list {
-    height: 50vh;
+    min-height: 50vh;
     display: grid;
     padding: 50px;
   }
