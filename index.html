@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main class="main">
+    <nav class="menu">
+      <div class="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="#skills">Skils</a></li>
+        <li class="menu__item"><a class="menu__link" href="#education">Education</a></li>
+        <li class="menu__item"><a class="menu__link" href="#code">Сode examples</a></li>
+        <li class="menu__item"><a class="menu__link" href="#portfolio">Portfolio</a></li>
+        <li class="menu__item"><a class="menu__link" href="#top">Contacts</a></li>
+      </ul>
+    </nav>
+    <section class="top" id="top">
+      <div class="top__content">
+        <figure class="picture">
+          <img class="picture__photo" src="./photo1.jpg" alt="photo">
+        </figure>
+        <div class="top__text">
+          <div class="top__title">
+            <h5>I'M</h5>
+            <h1>Yury Borovikov</h1>
+            <h5>Future developer</h5>
+          </div>
+          <div class="top__sub-title">Hello everyone! This is a junior JavaScript developer's resume.</div>
+
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a target="_blank" class="social__link social__link--github" href="https://github.com/yurkab24"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--phone" href="tel:375296707763"></a>
+              </li>
+              <li class="social__item">
+                <a target="_blank" class="social__link social__link--inst"
+                  href="https://www.instagram.com/yura.b0/"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="about" id="about">
+      <div class="content">
+        <h2 class="title"><span class="title__color">About</span> Me</h2>
+        <div class="about__content">
+          <div class="about__block">
+            <p class="about__text">I'm an electrician by education:) But I really want to change my profession to a web
+              developer. I like to develop as a programmer. I have a little knowledge of html, css and javascript.</p>
+          </div>
+          <div class="about__block about__block--grid">
+            <ul class="about__list">
+              <li class="about__item">First Name: <span class="about__item-color">Yury</span></li>
+              <li class="about__item">Last Name: <span class="about__item-color">Borovikov</span></li>
+              <li class="about__item">Birthday: <span class="about__item-color">24.07.1990</span></li>
+              <li class="about__item">Age: <span class="about__item-color">31</span></li>
+            </ul>
+            <ul class="about__list">
+              <li class="about__item">Country: <span class="about__item-color">Belarus</span></li>
+              <li class="about__item">City: <span class="about__item-color">Gomel</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="content">
+        <h2 class="title"><span class="title__color">S</span>kills</h2>
+        <h3 class="sub-title">I have only basic knowledge</h3>
+        <div class="skills__content">
+          <ul class="skills__list">
+            <li class="skills__item">
+              <h6 class="skills__name">HTML</h6>
+              <div class="scills__line scills__line--html"></div>
+            </li>
+            <li class="skills__item">
+              <h6 class="skills__name">CSS</h6>
+              <div class="scills__line scills__line--css"></div>
+            </li>
+            <li class="skills__item">
+              <h6 class="skills__name">JavaScript</h6>
+              <div class="scills__line scills__line--js"></div>
+            </li>
+            <li class="skills__item">
+              <h6 class="skills__name">PHP</h6>
+              <div class="scills__line scills__line--php"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <div class="content">
+        <h2 class="title"><span class="title__color">E</span>ducation</h2>
+        <div class="education__content">
+          <h3 class="sub-title">I took several courses</h3>
+          <ul class="education__list">
+            <li class="education__item">RS School Stage0</li>
+            <li class="education__item">Skillbox</li>
+            <li class="education__item">HTML Academy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="code" id="code">
+      <div class="content">
+        <h2 class="title"><span class="title__color">Code</span> examples</h2>
+        <div class="code__content">
+
+          <div class="code__item">
+
+            <h3 class="sub-title">Array.diff</h3>
+            <pre class="code__example">
+              <code class="javascript">
+function arrayDiff(a, b) {
+  if (a.length === 0) return [];
+  if (b.length === 0) return a;
+
+  return a.filter((item) => {
+    if (b.indexOf(item) === -1) {
+      return item;
+    }
+  });
+}
+              </code>
+            </pre>
+
+          </div>
+          <div class="code__item">
+
+            <h3 class="sub-title">Find the stray number</h3>
+            <pre class="code__example">
+              <code class="javascript">
+function stray(numbers) {
+  return numbers.find((n) => {
+    return numbers.indexOf(n)  == numbers.lastIndexOf(n);
+  });
+}
+              </code>
+            </pre>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="content">
+        <h2 class="title"><span class="title__color">P</span>ortfolio</h2>
+        <h3 class="sub-title">Examples of work</h3>
+        <div class="portfolio__content">
+
+          <div class="portfolio__item">
+            <h4 class="sub-title sub-title--portfolio"><a class="portfolio__name" target="_blank" href="https://rolling-scopes-school.github.io/yurkab24-JSFEPRESCHOOL/js-clock/">JS-Clock</a></h4>
+            <div class="portfolio__text-block">
+              <div class="portfolio__description">Electronic clock with theme changing function</div>
+              <div class="portfolio__subtitle">HTML, CSS, JS</div>
+            </div>
+            <a href="https://rolling-scopes-school.github.io/yurkab24-JSFEPRESCHOOL/js-clock/" target="_blank"><img class="portfolio__img" src="./js-clock-img.jpg" alt="JS-Clock"></a>
+          </div>
+
+          <div class="portfolio__item">
+            <h4 class="sub-title sub-title--portfolio"><a class="portfolio__name" target="_blank" href="https://rolling-scopes-school.github.io/yurkab24-JSFEPRESCHOOL/museum/">Museum</a></h4>
+            <div class="portfolio__text-block">
+              <div class="portfolio__description">Layout of the museum website</div>
+              <div class="portfolio__subtitle">HTML, CSS</div>
+            </div>
+            <a href="https://rolling-scopes-school.github.io/yurkab24-JSFEPRESCHOOL/museum/" target="_blank"><img class="portfolio__img" src="./museum-img.jpg" alt="Museum"></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="english" id="english">
+      <div class="content">
+        <h2 class="title"><span class="title__color">E</span>nglish</h2>
+        
+        <div class="english__content">
+          <p class="english__text">At the moment my English is pretty terrible:) But I'm working on it.</p>
+          <p class="english__text">English level: <span class="english__text-color">A1</span></p>
+        </div>
+        
+        
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="content">
+        <div class="footer__content">
+          <a class="footer__item school-link" href="https://rs.school/js/"><img src="./rs_school_js.svg" alt="rs_school"></a>
+          <div class="footer__item year">2021</div>
+          <a class="footer__item github-link" href="https://github.com/yurkab24"><img src="./icon-github.svg" alt="icon github"></a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
