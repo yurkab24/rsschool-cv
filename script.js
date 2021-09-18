@@ -31,7 +31,7 @@ let text2 = `✓ вёрстка валидная +10
 ✓ дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию +10
 `;
 let text3 = '- Видео отсутствует';
-let text4 = 'Pull requests: https://github.com/yurkab24/rsschool-cv/pull/9';
+let text4 = 'Pull requests: https://github.com/yurkab24/rsschool-cv/pulls';
 
 
 console.log('%c%s', 'color: black; font: 1rem/1 Tahoma;', text);
